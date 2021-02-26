@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap');
+@import 'partials/colors';
+@import 'partials/spacing';
+
+@mixin responsive() {
+    @media screen and (max-width: 996px) {
+        @content;
+    }
+}
+
+body {
+    background: $blue;
+    font-family: Mukta, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
