@@ -1,0 +1,19 @@
+.line1 {
+    animation: line 7s ease infinite alternate;
+}
+.line2 {
+    animation: line 4s ease infinite alternate;
+}
+.line3 {
+    animation: line 6s ease infinite alternate;
+}
+.line4 {
+    animation: line 5s ease infinite alternate;
+}
+
+@keyframes line {
+    to {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+    }
+}

@@ -8,6 +8,12 @@
     }
 }
 
+@mixin responsive-special() {
+    @media screen and (max-width: 1265px) {
+        @content;
+    }
+}
+
 body {
     background: $blue;
     font-family: Mukta, sans-serif;

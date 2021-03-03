@@ -22,10 +22,10 @@ export default function Header() {
                         <Link to="/">
                             <li className="nav-link">home</li>
                         </Link>
-                        <Link to="/">
+                        <Link to="/story">
                             <li className="nav-link">story</li>
                         </Link>
-                        <Link to="/">
+                        <Link to="/wallpapers">
                             <li className="nav-link">wallpapers</li>
                         </Link>
                         <Link to="/">
@@ -79,10 +79,10 @@ export default function Header() {
                     <Link to="/">
                         <li className="nav-link-mobile">home</li>
                     </Link>
-                    <Link to="/">
+                    <Link to="/story">
                         <li className="nav-link-mobile">story</li>
                     </Link>
-                    <Link to="/">
+                    <Link to="/wallpapers">
                         <li className="nav-link-mobile">wallpapers</li>
                     </Link>
                 </ul>

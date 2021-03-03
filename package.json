@@ -11,6 +11,7 @@
         "@types/react": "^17.0.0",
         "@types/react-dom": "^17.0.0",
         "react": "^17.0.1",
+        "react-awesome-slider": "^4.1.0",
         "react-dom": "^17.0.1",
         "react-parallax-tilt": "^1.4.89",
         "react-router-dom": "^5.2.0",
@@ -23,7 +24,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "style:check": "prettier --check src/**/*.* public/**/*.html",
+        "style:check": "prettier --check src/**/*.* public/**/*.html --ignore-path src/assets/images/*.*",
         "style:fix": "prettier --write src/**/*.* public/**/*.html"
     },
     "eslintConfig": {

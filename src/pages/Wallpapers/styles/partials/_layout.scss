@@ -1,0 +1,32 @@
+.container-wallpapers {
+    width: 90%;
+    padding-top: 20px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & p {
+        color: $gray-2;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+.carousel-wallpapers {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    @include responsive() {
+        width: 100%;
+    }
+}
+
+.item-carousel {
+    & img {
+        width: 110%;
+    }
+}

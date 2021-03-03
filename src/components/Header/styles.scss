@@ -37,13 +37,13 @@ header {
 
     & a {
         text-decoration: none;
+        margin-left: 50px;
     }
 }
 
 .nav-link {
     color: $gray-2;
     text-transform: uppercase;
-    margin-left: 50px;
     font-weight: 200;
 
     position: relative;
@@ -86,7 +86,7 @@ header {
     z-index: 50;
 
     a {
-        margin-right: 10px;
+        margin: 10px;
     }
 
     svg {
