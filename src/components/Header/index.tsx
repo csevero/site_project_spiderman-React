@@ -11,6 +11,8 @@ import './styles.css'
 
 export default function Header() {
     const [openMenu, setOpenMenu] = useState(false)
+    const [bxActive, setBxActive] = useState('')
+    const [menuActive, setMenuActive] = useState('')
 
     return (
         <header>
@@ -62,19 +64,19 @@ export default function Header() {
                     <img src={logoSpider} alt="logo spider" />
                 </div>
                 <div
-                    className="bx mr-2"
+                    className={`bx ${bxActive} mr-2`}
                     id="bx"
                     onClick={() => {
-                        const toggle = document.querySelector('#bx')
-                        const nav = document.querySelector('.menu-mobile')
-                        toggle?.classList.toggle('bx-active')
-                        nav?.classList.toggle('active-menu-mobile')
+                        setBxActive((prev) => (prev === '' ? 'bx-active' : ''))
+                        setMenuActive((prev) =>
+                            prev === '' ? 'active-menu-mobile' : ''
+                        )
                         setOpenMenu(!openMenu)
                     }}></div>
             </nav>
 
             {/* Menu mobile */}
-            <nav className="menu-mobile">
+            <nav className={`menu-mobile ${menuActive}`}>
                 <ul className="menu-options">
                     <Link to="/">
                         <li className="nav-link-mobile">home</li>

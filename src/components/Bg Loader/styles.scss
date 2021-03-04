@@ -1,0 +1,45 @@
+@import '../../assets/styles/global';
+
+.bg-loader {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: $red;
+
+    z-index: 9999;
+
+    & svg {
+        width: 250px;
+
+        path {
+            fill: transparent;
+            animation: spiderAnimation 5s ease-in-out infinite alternate;
+        }
+    }
+}
+
+@keyframes spiderAnimation {
+    0% {
+        stroke-width: 0;
+        stroke-dasharray: 1 100;
+        fill: transparent;
+    }
+
+    50% {
+        stroke-width: 1;
+        stroke-dasharray: 100 0;
+    }
+
+    100% {
+        stroke-width: 0.3;
+        fill: $white;
+    }
+}

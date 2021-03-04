@@ -1,18 +1,37 @@
-import React from 'react'
-import Header from '../../components/Header'
+import { TimelineMax } from 'gsap'
+import React, { useEffect, useState } from 'react'
 import Tilt from 'react-parallax-tilt'
-
-import spiderManLogo from '../../assets/images/spiderman-text.png'
-import psnIcon from '../../assets/images/ps.svg'
 import marvelIcon from '../../assets/images/marvel.svg'
+import psnIcon from '../../assets/images/ps.svg'
 import spiderMain from '../../assets/images/spiderman-img-main.png'
-
+import spiderManLogo from '../../assets/images/spiderman-text.png'
 import { ReactComponent as SvgLines } from '../../assets/images/svg-lines.svg'
 import spiderVideo from '../../assets/videos/spiderman2.mp4'
-
+import Header from '../../components/Header'
 import './styles/styles.css'
 
 export default function Main() {
+    const tl = new TimelineMax()
+    const [onLoad, setOnLoad] = useState(true)
+
+    useEffect(() => {
+        if (onLoad) {
+            tl.fromTo(
+                '.bg-video',
+                { opacity: 0 },
+                { duration: 1, opacity: 1, delay: 6 }
+            )
+
+            tl.fromTo(
+                '.bg-lines',
+                { opacity: 0 },
+                { duration: 2, opacity: 1, ease: 'slow' }
+            )
+
+            setOnLoad(false)
+        }
+    })
+
     return (
         <>
             {/* Movie Background */}
