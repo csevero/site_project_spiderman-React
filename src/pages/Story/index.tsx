@@ -10,11 +10,11 @@ import './styles/styles.css'
 export default function Story() {
     const tl = new TimelineMax()
     useEffect(() => {
-        tl.fromTo('.item-1', {opacity: 0}, {opacity: 1})
-        tl.fromTo('.item-2', {opacity: 0}, {opacity: 1})
-        tl.fromTo('.item-3', {opacity: 0}, {opacity: 1})
-        tl.fromTo('.item-3', {opacity: 0}, {opacity: 1})
-        tl.fromTo('#button-story', {opacity: 0}, {opacity: 1})
+        tl.fromTo('.item-1', { opacity: 0 }, { opacity: 1 })
+        tl.fromTo('.item-2', { opacity: 0 }, { opacity: 1 })
+        tl.fromTo('.item-3', { opacity: 0 }, { opacity: 1 })
+        tl.fromTo('.item-3', { opacity: 0 }, { opacity: 1 })
+        tl.fromTo('#button-story', { opacity: 0 }, { opacity: 1 })
     })
     return (
         <>
@@ -95,7 +95,12 @@ export default function Story() {
                         <img src={spiderImg3} alt="" />
                     </section>
                 </div>
-                <a href="/" id="button-story" className="btn">
+                <a
+                    href="https://www.playstation.com/pt-br/games/marvels-spider-man-miles-morales/"
+                    id="button-story"
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer">
                     PRE-ORDER NOW
                 </a>
             </div>

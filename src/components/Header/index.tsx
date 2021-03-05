@@ -21,7 +21,7 @@ export default function Header() {
                 <div className="nav-menu">
                     <img className="logo" src={logoSpider} alt="spider logo" />
                     <ul className="nav-menu-items">
-                        <Link to={{pathname: '/'}}>
+                        <Link to={{ pathname: '/' }}>
                             <li className="nav-link">home</li>
                         </Link>
                         <Link to="/story">
@@ -43,16 +43,28 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="nav-social">
-                    <a href="/">
+                    <a
+                        href="https://www.facebook.com/SpiderManPS5/"
+                        target="_blank"
+                        rel="noreferrer">
                         <FaceIcon />
                     </a>
-                    <a href="/">
+                    <a
+                        href="https://www.instagram.com/spiderman/"
+                        target="_blank"
+                        rel="noreferrer">
                         <InstaIcon />
                     </a>
-                    <a href="/">
+                    <a
+                        href="https://www.youtube.com/watch?v=T03PxxuCfDA"
+                        target="_blank"
+                        rel="noreferrer">
                         <YtbIcon />
                     </a>
-                    <a href="/">
+                    <a
+                        href="https://twitter.com/milesmoralesbr"
+                        target="_blank"
+                        rel="noreferrer">
                         <TtwIcon />
                     </a>
                 </div>
@@ -89,16 +101,28 @@ export default function Header() {
                     </Link>
                 </ul>
                 <div className="nav-social-mobile">
-                    <a href="/">
+                    <a
+                        href="https://www.facebook.com/SpiderManPS5/"
+                        target="_blank"
+                        rel="noreferrer">
                         <FaceIcon />
                     </a>
-                    <a href="/">
+                    <a
+                        href="https://www.instagram.com/spiderman/"
+                        target="_blank"
+                        rel="noreferrer">
                         <InstaIcon />
                     </a>
-                    <a href="/">
+                    <a
+                        href="https://www.youtube.com/watch?v=T03PxxuCfDA"
+                        target="_blank"
+                        rel="noreferrer">
                         <YtbIcon />
                     </a>
-                    <a href="/">
+                    <a
+                        href="https://twitter.com/milesmoralesbr"
+                        target="_blank"
+                        rel="noreferrer">
                         <TtwIcon />
                     </a>
                 </div>

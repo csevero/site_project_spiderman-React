@@ -87,18 +87,33 @@ export default function Main() {
                         Homem-Aranha.
                     </p>
                     <div className="buttons my-2" id="item-3">
-                        <a href="/" className="btn">
+                        <a
+                            href="https://www.playstation.com/pt-br/games/marvels-spider-man-miles-morales/"
+                            className="btn"
+                            target="_blank"
+                            rel="noreferrer">
                             Pre-order now
                         </a>
-                        <a href="/" className="btn-secundary">
+                        <a
+                            href="https://youtu.be/qjRzm9A7DU4"
+                            className="btn-secundary"
+                            target="_blank"
+                            rel="noreferrer">
                             Watch the teaser
                         </a>
                     </div>
                     <div className="flex-align-center" id="item-4">
-                        <a className="mr-2" href="/">
+                        <a
+                            className="mr-2"
+                            href="https://www.playstation.com/pt-br/"
+                            target="_blank"
+                            rel="noreferrer">
                             <img src={psnIcon} alt="" />
                         </a>
-                        <a href="/">
+                        <a
+                            href="https://www.marvel.com/"
+                            target="_blank"
+                            rel="noreferrer">
                             <img src={marvelIcon} alt="" />
                         </a>
                     </div>
