@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from '../../components/Header'
-import { TimelineMax } from 'gsap'
+import { gsap } from 'gsap'
 import spiderImg1 from '../../assets/images/spiderman-img-1.png'
 import spiderImg2 from '../../assets/images/spiderman-img-2.gif'
 import spiderImg3 from '../../assets/images/spiderman-img-3.png'
@@ -8,7 +8,8 @@ import spiderImg3 from '../../assets/images/spiderman-img-3.png'
 import './styles/styles.css'
 
 export default function Story() {
-    const tl = new TimelineMax()
+    const tl = gsap.timeline()
+
     useEffect(() => {
         tl.fromTo('.item-1', { opacity: 0 }, { opacity: 1 })
         tl.fromTo('.item-2', { opacity: 0 }, { opacity: 1 })
