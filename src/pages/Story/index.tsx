@@ -8,14 +8,14 @@ import spiderImg3 from '../../assets/images/spiderman-img-3.png'
 import './styles/styles.css'
 
 export default function Story() {
-    /* const tl = new TimelineMax()
+    const tl = new TimelineMax()
     useEffect(() => {
         tl.fromTo('.item-1', { opacity: 0 }, { opacity: 1 })
         tl.fromTo('.item-2', { opacity: 0 }, { opacity: 1 })
         tl.fromTo('.item-3', { opacity: 0 }, { opacity: 1 })
         tl.fromTo('.item-3', { opacity: 0 }, { opacity: 1 })
         tl.fromTo('#button-story', { opacity: 0 }, { opacity: 1 })
-    }) */
+    })
     return (
         <>
             <Header />
