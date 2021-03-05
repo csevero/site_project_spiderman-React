@@ -8,7 +8,7 @@ import './styles/styles.css'
 import { Link } from 'react-router-dom'
 
 export default function NotFound() {
-    const tl = new TimelineMax()
+    /* const tl = new TimelineMax()
 
     useEffect(() => {
         tl.fromTo('.bg-lines', { opacity: 0 }, { opacity: 0.4})
@@ -37,7 +37,7 @@ export default function NotFound() {
             { opacity: 0 },
             { opacity: 1, ease: 'power4.out' }
         )
-    })
+    }) */
     return (
         <>
             <Header />
