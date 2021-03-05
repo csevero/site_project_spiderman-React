@@ -1,17 +1,15 @@
+import gsap from 'gsap/all'
 import React, { useEffect } from 'react'
-import Header from '../../components/Header'
-import { TimelineMax } from 'gsap'
-
-import { ReactComponent as SvgLines } from '../../assets/images/svg-lines1.svg'
-
-import './styles/styles.css'
 import { Link } from 'react-router-dom'
+import { ReactComponent as SvgLines } from '../../assets/images/svg-lines1.svg'
+import Header from '../../components/Header'
+import './styles/styles.css'
 
 export default function NotFound() {
-    /* const tl = new TimelineMax()
+    const tl = gsap.timeline()
 
     useEffect(() => {
-        tl.fromTo('.bg-lines', { opacity: 0 }, { opacity: 0.4})
+        tl.fromTo('.bg-lines', { opacity: 0 }, { opacity: 0.4 })
 
         tl.fromTo(
             '#text-1',
@@ -37,7 +35,7 @@ export default function NotFound() {
             { opacity: 0 },
             { opacity: 1, ease: 'power4.out' }
         )
-    }) */
+    })
     return (
         <>
             <Header />

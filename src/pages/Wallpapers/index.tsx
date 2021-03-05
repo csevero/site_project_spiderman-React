@@ -1,24 +1,28 @@
+import gsap from 'gsap/all'
 import React, { useEffect } from 'react'
-import Header from '../../components/Header'
-import { TimelineMax } from 'gsap'
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
-
 import wallPaper1 from '../../assets/images/wallpaper-1.png'
 import wallPaper2 from '../../assets/images/wallpaper-2.png'
 import wallPaper3 from '../../assets/images/wallpaper-3.png'
 import wallPaper4 from '../../assets/images/wallpaper-4.png'
 import wallPaper5 from '../../assets/images/wallpaper-5.png'
 import wallPaper6 from '../../assets/images/wallpaper-6.png'
-
+import Header from '../../components/Header'
 import './styles/styles.css'
 
 export default function WallpapersPage() {
-    /* const tl = new TimelineMax()
+    const tl = gsap.timeline()
+
     useEffect(() => {
         tl.fromTo('#text-1', { opacity: 0 }, { opacity: 1 })
-        tl.fromTo('.carousel-wallpapers', { opacity: 0 }, { opacity: 1 }, '-=0.5')
-    }) */
+        tl.fromTo(
+            '.carousel-wallpapers',
+            { opacity: 0 },
+            { opacity: 1 },
+            '-=0.5'
+        )
+    })
     return (
         <>
             <Header />

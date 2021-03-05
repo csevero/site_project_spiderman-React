@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
-import Header from '../../components/Header'
 import { gsap } from 'gsap'
+import React, { useEffect } from 'react'
 import spiderImg1 from '../../assets/images/spiderman-img-1.png'
 import spiderImg2 from '../../assets/images/spiderman-img-2.gif'
 import spiderImg3 from '../../assets/images/spiderman-img-3.png'
-
+import Header from '../../components/Header'
 import './styles/styles.css'
 
 export default function Story() {
