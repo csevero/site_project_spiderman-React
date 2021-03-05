@@ -11,7 +11,7 @@ import Header from '../../components/Header'
 import './styles/styles.css'
 
 export default function Main() {
-    const tl = new TimelineMax()
+    /* const tl = new TimelineMax()
 
     useEffect(() => {
         tl.fromTo('.bg-video', { opacity: 0 }, { duration: 1, opacity: 1 })
@@ -52,7 +52,7 @@ export default function Main() {
             { y: 0, opacity: 1, ease: 'power4.out' },
             '-=0.8'
         )
-    })
+    }) */
 
     return (
         <>
