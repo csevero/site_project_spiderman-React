@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/Header'
-
+import { TimelineMax } from 'gsap'
 import spiderImg1 from '../../assets/images/spiderman-img-1.png'
 import spiderImg2 from '../../assets/images/spiderman-img-2.gif'
 import spiderImg3 from '../../assets/images/spiderman-img-3.png'
@@ -8,6 +8,14 @@ import spiderImg3 from '../../assets/images/spiderman-img-3.png'
 import './styles/styles.css'
 
 export default function Story() {
+    const tl = new TimelineMax()
+    useEffect(() => {
+        tl.fromTo('.item-1', {opacity: 0}, {opacity: 1})
+        tl.fromTo('.item-2', {opacity: 0}, {opacity: 1})
+        tl.fromTo('.item-3', {opacity: 0}, {opacity: 1})
+        tl.fromTo('.item-3', {opacity: 0}, {opacity: 1})
+        tl.fromTo('#button-story', {opacity: 0}, {opacity: 1})
+    })
     return (
         <>
             <Header />
@@ -87,7 +95,7 @@ export default function Story() {
                         <img src={spiderImg3} alt="" />
                     </section>
                 </div>
-                <a href="/" className="btn">
+                <a href="/" id="button-story" className="btn">
                     PRE-ORDER NOW
                 </a>
             </div>

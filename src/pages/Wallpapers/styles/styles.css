@@ -315,8 +315,7 @@ body {
 }
 
 .container-wallpapers {
-  width: 90%;
-  padding-top: 20px;
+  max-width: 1440px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,24 +327,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px 16px;
 }
 
 .container-wallpapers p {
   color: #a1a3a5;
-  font-size: 20px;
-  margin-bottom: 25px;
+  text-align: justify;
+  margin-bottom: 15px;
 }
 
 .carousel-wallpapers {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 996px) {
-  .carousel-wallpapers {
-    width: 100%;
-  }
 }
 
 .item-carousel img {

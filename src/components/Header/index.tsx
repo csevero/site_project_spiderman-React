@@ -21,7 +21,7 @@ export default function Header() {
                 <div className="nav-menu">
                     <img className="logo" src={logoSpider} alt="spider logo" />
                     <ul className="nav-menu-items">
-                        <Link to="/">
+                        <Link to={{pathname: '/'}}>
                             <li className="nav-link">home</li>
                         </Link>
                         <Link to="/story">

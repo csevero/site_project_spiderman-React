@@ -1,28 +1,23 @@
 .container-wallpapers {
-    width: 90%;
-    padding-top: 20px;
+    max-width: 1440px;
 
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    padding: 30px 16px;
+
     & p {
         color: $gray-2;
-        font-size: 20px;
-        margin-bottom: 25px;
+        text-align: justify;
+        margin-bottom: 15px;
     }
 }
 
 .carousel-wallpapers {
     width: 100%;
     height: 100%;
-
-    margin: 0 auto;
-
-    @include responsive() {
-        width: 100%;
-    }
 }
 
 .item-carousel {

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/Header'
-
+import { TimelineMax } from 'gsap'
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
 
@@ -14,11 +14,16 @@ import wallPaper6 from '../../assets/images/wallpaper-6.png'
 import './styles/styles.css'
 
 export default function WallpapersPage() {
+    const tl = new TimelineMax()
+    useEffect(() => {
+        tl.fromTo('#text-1', { opacity: 0 }, { opacity: 1 })
+        tl.fromTo('.carousel-wallpapers', { opacity: 0 }, { opacity: 1 }, '-=0.5')
+    })
     return (
         <>
             <Header />
             <div className="container-wallpapers">
-                <p>
+                <p id="text-1">
                     Selecionamos alguns imagens em alta definição para vocês!
                     Escolha suas fotos preferidas para usar de papel de parede
                     nos seus dispositivos!
